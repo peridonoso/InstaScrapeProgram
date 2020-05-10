@@ -14,7 +14,7 @@ numero_fotos = 10
 
 this_file_path = os.path.abspath(__file__)
 BASE_DIR = os.path.dirname(this_file_path)
-images_dir = os.path.join(BASE_DIR, "Fotos_{nombre_usuario}")
+images_dir = os.path.join(BASE_DIR, f"Fotos_{nombre_usuario}")
 os.makedirs(images_dir, exist_ok=True)
 
 
